@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ARIA - Privacy Policy</title>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Inter', -apple-system, sans-serif; background: #fff; color: #1a1a2e; line-height: 1.7; }
+    .container { max-width: 680px; margin: 0 auto; padding: 48px 24px; }
+    h1 { font-size: 28px; font-weight: 800; margin-bottom: 8px; }
+    .updated { font-size: 13px; color: #6b7280; margin-bottom: 32px; }
+    h2 { font-size: 18px; font-weight: 700; margin: 28px 0 12px 0; color: #1a1a2e; }
+    p { font-size: 15px; color: #374151; margin-bottom: 14px; }
+    ul { margin: 8px 0 16px 20px; }
+    li { font-size: 15px; color: #374151; margin-bottom: 6px; }
+    strong { color: #1a1a2e; }
+    .highlight {
+        background: #f0fdf4; border: 1px solid #bbf7d0; border-radius: 10px;
+        padding: 16px 20px; margin: 20px 0;
+    }
+    .highlight p { margin-bottom: 0; }
+    .footer { margin-top: 40px; padding-top: 20px; border-top: 1px solid #e5e7eb; font-size: 13px; color: #9ca3af; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>ARIA Privacy Policy</h1>
+<p class="updated">Last updated: March 24, 2026</p>
+
+<div class="highlight">
+<p><strong>The short version:</strong> ARIA runs entirely on your hardware. Your data never leaves your computer. We don't collect, store, or transmit your personal information to any cloud service.</p>
+</div>
+
+<h2>What ARIA Is</h2>
+<p>ARIA (Automated Routing & Intelligence Assistant) is a locally-installed AI assistant that helps business owners manage their daily communications. It connects to your email, calendar, and messaging accounts to generate daily briefings, track commitments, and draft responses.</p>
+
+<h2>How Your Data Is Handled</h2>
+<p>ARIA is designed with a local-first architecture. This means:</p>
+<ul>
+    <li><strong>All processing happens on your computer.</strong> The AI models run locally on your Mac hardware. Your emails, calendar events, meeting notes, and other data are processed entirely on your machine.</li>
+    <li><strong>Your data is stored on your computer.</strong> All data files (emails, calendar events, briefings, notes) are saved as files on your local hard drive. They are never uploaded to external servers.</li>
+    <li><strong>No cloud storage or analytics.</strong> We do not operate cloud servers that receive, store, or analyze your data. There is no telemetry, usage tracking, or analytics collection.</li>
+</ul>
+
+<h2>Google Account Access</h2>
+<p>ARIA requests access to your Google account for the following purposes:</p>
+<ul>
+    <li><strong>Gmail (read-only):</strong> ARIA reads your incoming emails to triage them by priority, extract action items, and include relevant messages in your daily briefing. ARIA does not send emails on your behalf, modify your emails, or delete any messages.</li>
+    <li><strong>Google Calendar (read-only):</strong> ARIA reads your calendar events to include your schedule in daily briefings and generate meeting preparation notes. ARIA does not create, modify, or delete calendar events.</li>
+</ul>
+<p>Access tokens are stored locally on your computer in an encrypted configuration file. They are never transmitted to us or any third party.</p>
+
+<h2>What We Access</h2>
+<ul>
+    <li><strong>Email metadata and content:</strong> Subject lines, sender/recipient addresses, email body text, and timestamps. Used solely for triage, summarization, and briefing generation on your local machine.</li>
+    <li><strong>Calendar event details:</strong> Event titles, times, attendee lists, locations, and descriptions. Used solely for schedule display and meeting preparation on your local machine.</li>
+</ul>
+
+<h2>What We Do NOT Do</h2>
+<ul>
+    <li>We do not store your data on any external server</li>
+    <li>We do not sell, share, or transmit your data to third parties</li>
+    <li>We do not use your data for advertising or marketing</li>
+    <li>We do not use your data to train AI models</li>
+    <li>We do not send emails or calendar invites on your behalf</li>
+    <li>We do not collect usage analytics or telemetry</li>
+</ul>
+
+<h2>Optional Cloud AI</h2>
+<p>For certain advanced features (such as high-quality document drafting), ARIA may optionally send text queries to Anthropic's Claude API for AI processing. When this feature is enabled:</p>
+<ul>
+    <li>Only the specific text being analyzed is sent (not your full inbox or calendar)</li>
+    <li>Anthropic does not use API inputs for model training (per their <a href="https://www.anthropic.com/policies/privacy">privacy policy</a>)</li>
+    <li>This feature is off by default and must be explicitly enabled</li>
+    <li>You can use ARIA entirely with local AI and never send any data externally</li>
+</ul>
+
+<h2>Data Retention</h2>
+<p>All data is stored locally on your computer. Default retention periods:</p>
+<ul>
+    <li>Inbox data (emails, calendar events): 30 days</li>
+    <li>Generated briefings: 14 days</li>
+</ul>
+<p>You can modify these retention periods or delete all data at any time by removing the files from your ARIA directory.</p>
+
+<h2>Security</h2>
+<ul>
+    <li>OAuth credentials are stored with restricted file permissions (owner read/write only)</li>
+    <li>The onboarding web server runs only on localhost (127.0.0.1) and is not accessible from other computers</li>
+    <li>Health monitoring alerts are sent only to authorized Telegram accounts</li>
+    <li>All network communication uses HTTPS/TLS encryption</li>
+</ul>
+
+<h2>Revoking Access</h2>
+<p>You can revoke ARIA's access to your Google account at any time:</p>
+<ul>
+    <li>Visit <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a></li>
+    <li>Find "ARIA" in the list of connected apps</li>
+    <li>Click "Remove Access"</li>
+</ul>
+<p>You can also uninstall ARIA entirely by deleting the ~/ARIA directory and removing the launchd jobs.</p>
+
+<h2>Children's Privacy</h2>
+<p>ARIA is designed for business use by adults. We do not knowingly process data from children under 13.</p>
+
+<h2>Changes to This Policy</h2>
+<p>We may update this privacy policy from time to time. Changes will be reflected in the "Last updated" date above. For significant changes, we will notify users through the ARIA briefing system.</p>
+
+<h2>Contact</h2>
+<p>If you have questions about this privacy policy or ARIA's data practices:</p>
+<ul>
+    <li>Email: sean@wrightadvisorsatx.com</li>
+    <li>Wright Advisors, Lakeway, TX</li>
+</ul>
+
+<div class="footer">
+    ARIA is developed by Wright Advisors. &copy; 2026 Wright Advisors. All rights reserved.
+</div>
+
+</div>
+</body>
+</html>

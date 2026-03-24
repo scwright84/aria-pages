@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ARIA - Install</title>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+        font-family: 'Inter', -apple-system, sans-serif;
+        background: #f8f9fb;
+        color: #1a1a2e;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .container {
+        max-width: 560px;
+        padding: 40px 24px;
+        text-align: center;
+    }
+    .logo {
+        font-size: 48px;
+        font-weight: 800;
+        color: #0096FF;
+        letter-spacing: -2px;
+        margin-bottom: 8px;
+    }
+    .tagline {
+        font-size: 18px;
+        color: #374151;
+        margin-bottom: 32px;
+        font-weight: 500;
+    }
+    .card {
+        background: #fff;
+        border-radius: 16px;
+        border: 1px solid #e5e7eb;
+        padding: 32px;
+        margin-bottom: 24px;
+        text-align: left;
+    }
+    .download-btn {
+        display: block;
+        width: 100%;
+        padding: 16px 24px;
+        background: linear-gradient(135deg, #0096FF 0%, #0066cc 100%);
+        color: #fff;
+        font-size: 17px;
+        font-weight: 700;
+        border: none;
+        border-radius: 12px;
+        cursor: pointer;
+        text-decoration: none;
+        text-align: center;
+        margin-bottom: 12px;
+        transition: transform 0.1s;
+    }
+    .download-btn:hover { transform: scale(1.02); }
+    .download-btn:active { transform: scale(0.98); }
+    .download-note {
+        font-size: 12px;
+        color: #9ca3af;
+        text-align: center;
+    }
+    .req-title {
+        font-size: 14px;
+        font-weight: 700;
+        color: #1a1a2e;
+        margin-bottom: 12px;
+    }
+    .req-list {
+        list-style: none;
+        padding: 0;
+    }
+    .req-list li {
+        font-size: 14px;
+        color: #4b5563;
+        padding: 6px 0;
+        padding-left: 24px;
+        position: relative;
+    }
+    .req-list li::before {
+        content: '✓';
+        position: absolute;
+        left: 0;
+        color: #10b981;
+        font-weight: 700;
+    }
+    .steps {
+        list-style: none;
+        padding: 0;
+        counter-reset: steps;
+    }
+    .steps li {
+        font-size: 14px;
+        color: #4b5563;
+        padding: 10px 0;
+        padding-left: 36px;
+        position: relative;
+        border-bottom: 1px solid #f3f4f6;
+        counter-increment: steps;
+    }
+    .steps li:last-child { border-bottom: none; }
+    .steps li::before {
+        content: counter(steps);
+        position: absolute;
+        left: 0;
+        top: 10px;
+        width: 24px;
+        height: 24px;
+        background: #eff6ff;
+        color: #0096FF;
+        border-radius: 50%;
+        font-size: 12px;
+        font-weight: 700;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .steps li strong { color: #1a1a2e; }
+    .privacy {
+        background: #f0fdf4;
+        border: 1px solid #bbf7d0;
+        border-radius: 10px;
+        padding: 16px;
+        margin-top: 16px;
+    }
+    .privacy-title {
+        font-size: 13px;
+        font-weight: 700;
+        color: #166534;
+        margin-bottom: 4px;
+    }
+    .privacy p {
+        font-size: 12px;
+        color: #4b5563;
+        line-height: 1.5;
+    }
+    .footer {
+        margin-top: 24px;
+        font-size: 12px;
+        color: #9ca3af;
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <div class="logo">ARIA</div>
+    <div class="tagline">AI Operating System for Your Practice</div>
+
+    <div class="card">
+        <a href="ARIA-Install.command" download class="download-btn">
+            Download ARIA Installer for Mac
+        </a>
+        <p class="download-note">macOS only. Requires Apple Silicon (M1 or later). ~8GB download.</p>
+    </div>
+
+    <div class="card">
+        <div class="req-title">How it works</div>
+        <ol class="steps">
+            <li><strong>Download and open</strong> the installer file above</li>
+            <li><strong>Let it run</strong> for 10-15 minutes (it downloads AI models)</li>
+            <li><strong>Connect your accounts</strong> in the setup wizard that opens automatically</li>
+            <li><strong>Get your first briefing</strong> tomorrow morning</li>
+        </ol>
+    </div>
+
+    <div class="card">
+        <div class="req-title">What you'll need</div>
+        <ul class="req-list">
+            <li>A Mac with Apple Silicon (M1, M2, M3, or M4)</li>
+            <li>At least 15GB of free disk space</li>
+            <li>Your Gmail account credentials</li>
+            <li>A Telegram account (free app, any phone)</li>
+            <li>About 15 minutes</li>
+        </ul>
+
+        <div class="privacy">
+            <div class="privacy-title">Your data stays on your computer</div>
+            <p>ARIA runs entirely on your Mac. Your emails, calendar, and patient data are never uploaded to the cloud. The AI models run locally on your hardware.</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        ARIA v1.0 &middot; Questions? Contact your administrator.
+    </div>
+</div>
+</body>
+</html>
