@@ -1,0 +1,13 @@
+{
+  "version": "1.0.0",
+  "download_url": "https://scwright84.github.io/aria-pages/ARIA-deploy.tar.gz",
+  "changes": [
+    "Command center with sidebar navigation",
+    "AI chat on dashboard",
+    "Enhanced AI supports Claude and OpenAI",
+    "Email management with learning loop",
+    "Onboarding interview with data-aware questions",
+    "Auto-update system"
+  ],
+  "released": "2026-03-25"
+}
