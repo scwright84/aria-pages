@@ -1,13 +1,15 @@
 {
-  "version": "1.0.1",
+  "version": "1.0.2",
   "download_url": "https://scwright84.github.io/aria-pages/ARIA-deploy.tar.gz",
   "changes": [
-    "Fixed installer: all dependencies included",
-    "30-day data sync on all sources",
-    "OAuth credentials pre-bundled",
-    "Context upload on integrations page",
-    "Silent Tailscale install",
-    "oMLX replaces Ollama"
+    "Rebuilt installer from scratch",
+    "Zero prompts - fully automatic",
+    "Creates default config with AI section",
+    "Verifies critical packages before launch",
+    "Waits for server to start before opening browser",
+    "All OAuth credentials bundled",
+    "requirements.txt with all dependencies",
+    "30-day sync on all sources"
   ],
   "released": "2026-03-25"
 }
