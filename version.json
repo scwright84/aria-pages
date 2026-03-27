@@ -1,13 +1,13 @@
 {
-  "version": "1.0.3",
+  "version": "1.0.4",
   "download_url": "https://scwright84.github.io/aria-pages/ARIA-deploy.tar.gz",
   "changes": [
-    "Fixed briefing: emails now found correctly",
+    "Intelligent interview: AI analyzes emails before asking questions",
+    "Groups contacts by role/project, filters junk",
     "Auto-generates first briefing after sync",
-    "Integrations grid moved up",
-    "Remote support removed from checklist",
+    "Briefing field name fix",
     "Homebrew PATH fix",
-    "Rebuilt integrations page"
+    "Integrations grid moved up"
   ],
   "released": "2026-03-25"
 }
