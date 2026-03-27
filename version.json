@@ -1,15 +1,13 @@
 {
-  "version": "1.0.2",
+  "version": "1.0.3",
   "download_url": "https://scwright84.github.io/aria-pages/ARIA-deploy.tar.gz",
   "changes": [
-    "Rebuilt installer from scratch",
-    "Zero prompts - fully automatic",
-    "Creates default config with AI section",
-    "Verifies critical packages before launch",
-    "Waits for server to start before opening browser",
-    "All OAuth credentials bundled",
-    "requirements.txt with all dependencies",
-    "30-day sync on all sources"
+    "Fixed briefing: emails now found correctly",
+    "Auto-generates first briefing after sync",
+    "Integrations grid moved up",
+    "Remote support removed from checklist",
+    "Homebrew PATH fix",
+    "Rebuilt integrations page"
   ],
   "released": "2026-03-25"
 }
